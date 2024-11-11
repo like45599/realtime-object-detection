@@ -1,0 +1,5 @@
+torch==2.4.1
+opencv-python==4.7.0.72
+requests
+numpy
+
