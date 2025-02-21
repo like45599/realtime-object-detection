@@ -1,6 +1,7 @@
 # 实时目标检测系统（基于 YOLOv5）
 
 本项目实现了一个基于 YOLOv5 的实时目标检测系统，能够从远程视频流中获取数据并进行目标检测。使用 PyTorch 和 OpenCV 进行实时视频流处理，能够对视频中的目标进行实时检测和展示。
+CSDN笔记https://blog.csdn.net/like455/article/details/143686727
 
 ## 项目结构
 
