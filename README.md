@@ -47,6 +47,11 @@ realtime-object-detection/            # 项目根目录
     ```
 
 4. 如果没有预训练的 YOLOv5 模型，可以从 [YOLOv5 GitHub](https://github.com/ultralytics/yolov5) 下载并保存在 `assets/` 文件夹下，或者运行程序时自动下载。
+   这边建议自动下载，经过热心网友**wangbowen-8800**的指正，本项目存在clone后无法直接运行、色彩失真的情况。
+对应解决方案：
+ - clone后无法直接运行：清空/assets 下的yolo5s.pt文件，以及项目目录下的yolo5s.pt直接自动下载。
+ - 在video/video_stream.py代码中的`cv2.imshow("Video Stream with Detection", frame)`上一行加入`frame = frame[..., ::-1]`
+
 
 ## 配置
 
